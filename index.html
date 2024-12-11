@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Book Library</h1>
+    <button id="new-book-button">New Book</button>
+    <div class="library" id="library"></div>
+
+    <div id="book-form" style="display: none;">
+        <h2>Add a New Book</h2>
+        <form id="form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" required>
+            <label for="author">Author:</label>
+            <input type="text" id="author" required>
+            <label for="pages">Number of Pages:</label>
+            <input type="number" id="pages" required>
+            <label for="read">Read:</label>
+            <input type="checkbox" id="read">
+            <button type="submit">Add Book</button>
+            <button type="button" id="cancel-button">Cancel</button>
+        </form>
+    </div>
+    <script>
+        const myLibrary = [];
+
+        function Book(title,author,pages,read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+        // this.info = function() {
+        //     console.log(`Title: ${this.title}, Author: ${this.author}, Pages: ${pages}, ${read} `)
+    }
+
+
+
+    function addBookToLibrary(title,author,pages,read){//funtion to add new book in the constructor
+        const newBook = new Book(title,author,pages,read)
+        myLibrary.push(newBook);//add book to array
+        displayBooks();
+    }
+
+    function displayBooks(){
+        
+    }
+
+    </script>
+</body>
+</html>
