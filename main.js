@@ -30,6 +30,7 @@ myLibrary.forEach((book, index) => {
         <p>Author:${book.author}</p>
         <p>Pages:${book.pages}</p>
         <p>Read:${book.read ? 'Yes' : 'No'}</p> 
+         <button onclick="toggleReadStatus(${index})">change Read Status</button>
         <button onclick="removeBook(${index})">Remove</button>
     `;
     libraryDiv.appendChild(bookCard); // Append within the loop
