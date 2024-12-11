@@ -1,0 +1,82 @@
+.library {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.book-card {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    padding: 15px;
+    width: 200px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: monospace;
+    font-size: 3rem;
+}
+
+h2 {
+    margin-top: 0;
+    color: #555;
+    font-family: monospace;
+    text-align: center;
+}
+
+label{
+    font-family: monospace;
+    font-size: 20px; /*use rem next time with with custom size */
+    font-weight: 900;
+    color: #555;
+}
+
+#new-book-button{
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 50px;
+        cursor: pointer;
+        margin-top: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#book-form {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    max-width: 300px;
+    margin: 20px auto;
+}
